@@ -1,1 +1,0 @@
-import{r as e,t}from"./utils-BFmSEvC8.js";var n=e();function r({children:e,className:r,delay:i=0,as:a=`div`}){let o={animationDelay:`${i}ms`};return(0,n.jsx)(a,{className:t(`reveal`,r),style:o,children:e})}export{r as t};
