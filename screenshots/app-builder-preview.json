@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Christopher Kenreigh",
+      "hasCanvas": false,
+      "bodyTextLen": 2329,
+      "bodyTextHash": "9e9e5c3fa3e359a0256ce5ba2a4de75c4be25dbc392d16263710393fa433966a",
+      "bodyTextPrefix": "Skip to content CK Work About Interests Contact PORTFOLIO Christ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Christopher Kenreigh",
+      "hasCanvas": false,
+      "bodyTextLen": 2329,
+      "bodyTextHash": "9e9e5c3fa3e359a0256ce5ba2a4de75c4be25dbc392d16263710393fa433966a",
+      "bodyTextPrefix": "Skip to content CK Work About Interests Contact PORTFOLIO Christ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
