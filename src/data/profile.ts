@@ -1,9 +1,9 @@
 export const profile = {
   name: "Christopher Kenreigh",
   short: "CK",
-  title: "Director of UX & Product Design",
+  title: "Product Design · Design Leadership · Design Strategy",
   location: "Phoenix, AZ · USA",
-  availability: "Remote, hybrid, or relocation",
+  availability: "Remote | hybrid | Travel",
   email: "c.kenreigh@gmail.com",
   phone: "480-206-2145",
   phoneHref: "tel:+14802062145",
