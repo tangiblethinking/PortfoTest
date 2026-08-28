@@ -64,7 +64,7 @@ function Home() {
           </button>
         </Reveal>
         <p className="mt-3 px-1 text-caption text-subtle">
-          {profile.location} · Available for Director-level roles ·{" "}
+          {profile.location} · Based on a true story{" "}
           {profile.availability}
         </p>
       </section>
