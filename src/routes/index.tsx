@@ -21,7 +21,7 @@ function Home() {
       <section className="page-wrap-wide pb-8 pt-16 md:pb-12 md:pt-24">
         <Reveal>
           <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-            Portfolio
+            The Portfolio of
           </p>
         </Reveal>
         <Reveal delay={80}>
