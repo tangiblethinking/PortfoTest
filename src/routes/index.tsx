@@ -33,7 +33,7 @@ function Home() {
           <p className="mt-5 max-w-xl text-lede leading-snug text-muted">
             {profile.title}.
             <br />
-            Strategy, systems, and shipped product.
+            I'm a solutions builder.
           </p>
         </Reveal>
         <Reveal delay={200} className="mt-8 flex flex-wrap items-center gap-3">
