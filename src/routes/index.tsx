@@ -58,7 +58,7 @@ function Home() {
               <img
                 src="/covers/hero.jpg"
                 alt="Quiet studio desk with a closed laptop in north light"
-                className="img-cover transition-[transform] duration-700 ease-[var(--ease-out)] group-hover:scale-[1.02]"
+                className="h-full w-full object-contain transition-[transform] duration-700 ease-[var(--ease-out)] group-hover:scale-[1.02]"
               />
             </div>
           </button>
