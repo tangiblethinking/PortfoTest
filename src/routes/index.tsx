@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/reveal";
 import { FilmCard, MediaCard } from "@/components/media-card";
@@ -8,6 +9,115 @@ import { useEmbed } from "@/components/embed-context";
 import { getWork } from "@/data/work";
 
 export const Route = createFileRoute("/")({ component: Home });
+
+function BeforeAfterSlider({
+  beforeSrc,
+  afterSrc,
+  beforeLabel,
+  afterLabel,
+  alt,
+}: {
+  beforeSrc: string;
+  afterSrc: string;
+  beforeLabel: string;
+  afterLabel: string;
+  alt: string;
+}) {
+  const [pos, setPos] = useState(50);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const dragging = useRef(false);
+
+  const updatePos = useCallback((clientX: number) => {
+    const el = containerRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const x = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    setPos(x * 100);
+  }, []);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    e.stopPropagation();
+    e.preventDefault();
+    dragging.current = true;
+    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+    updatePos(e.clientX);
+  };
+
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (!dragging.current) return;
+    e.stopPropagation();
+    updatePos(e.clientX);
+  };
+
+  const onPointerUp = (e: React.PointerEvent) => {
+    e.stopPropagation();
+    dragging.current = false;
+  };
+
+  return (
+    <div
+      ref={containerRef}
+      className="relative h-full w-full select-none overflow-hidden"
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerLeave={onPointerUp}
+    >
+      {/* After image (full) */}
+      <img
+        src={afterSrc}
+        alt={alt}
+        className="absolute inset-0 h-full w-full object-contain"
+        draggable={false}
+      />
+      {/* Before image (clipped) */}
+      <div
+        className="absolute inset-0 overflow-hidden"
+        style={{ width: `${pos}%` }}
+      >
+        <img
+          src={beforeSrc}
+          alt={alt}
+          className="h-full max-w-none object-contain"
+          style={{
+            width: containerRef.current
+              ? `${containerRef.current.offsetWidth}px`
+              : "100%",
+            maxWidth: "none",
+          }}
+          draggable={false}
+        />
+      </div>
+      {/* Labels */}
+      <span className="pointer-events-none absolute left-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
+        {beforeLabel}
+      </span>
+      <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
+        {afterLabel}
+      </span>
+      {/* Handle */}
+      <div
+        className="absolute top-0 bottom-0 z-10 w-1 -translate-x-1/2 cursor-ew-resize bg-white shadow"
+        style={{ left: `${pos}%` }}
+        onPointerDown={onPointerDown}
+        onClick={(e) => e.stopPropagation()}
+        role="slider"
+        aria-valuenow={Math.round(pos)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label="Before after slider"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowLeft") setPos((p) => Math.max(0, p - 2));
+          if (e.key === "ArrowRight") setPos((p) => Math.min(100, p + 2));
+        }}
+      >
+        <div className="absolute left-1/2 top-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-ink/80 shadow">
+          <span className="text-xs text-white">↔</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Home() {
   const { openWork } = useEmbed();
@@ -55,10 +165,12 @@ function Home() {
             aria-label="Open featured studio image"
           >
             <div className="aspect-[16/9] md:aspect-[21/9]">
-              <img
-                src="/covers/hero.jpg"
+              <BeforeAfterSlider
+                beforeSrc="/covers/hero.jpg"
+                afterSrc="/covers/hero_2.jpg"
+                beforeLabel="what you see me do"
+                afterLabel="what i really do"
                 alt="Quiet studio desk with a closed laptop in north light"
-                className="h-full w-full object-contain transition-[transform] duration-700 ease-[var(--ease-out)] group-hover:scale-[1.02]"
               />
             </div>
           </button>
