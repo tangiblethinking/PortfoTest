@@ -254,7 +254,7 @@ function Home() {
           My Vibe
         </p>
         <h2 className="mt-2 text-title font-semibold tracking-[-0.03em] text-ink">
-          What gets done.
+          What gets done - 
         </h2>
         <div className="mt-12 grid gap-10 md:grid-cols-3">
           {capabilities.map((cap) => (
