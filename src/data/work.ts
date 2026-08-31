@@ -41,7 +41,7 @@ export const work: WorkItem[] = [
     embeds: [
       {
         label: "Live deployment",
-        url: "https://director-case-study-ux-bgoals.vercel.app/",
+        url: "https://www.uxapex.com/cart",
         kind: "app",
       },
       { label: "Case study", url: "https://www.uxapex.com/ecomm", kind: "html" },
