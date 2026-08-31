@@ -177,7 +177,7 @@ function Home() {
           </button>
         </Reveal>
         <p className="mt-3 px-1 text-caption text-subtle">
-          {profile.location} · Based on a true story{" "}
+          {profile.location} · Based on a true story · Click/Tap to see more{" "}
           {profile.availability}
         </p>
       </section>
@@ -203,10 +203,10 @@ function Home() {
         <div className="mb-10 flex items-end justify-between gap-4">
           <div>
             <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-              Selected
+              Experience
             </p>
             <h2 className="mt-2 text-title font-semibold tracking-[-0.03em] text-ink">
-              The work.
+              The work
             </h2>
           </div>
           <Link
@@ -233,7 +233,7 @@ function Home() {
             Methodology
           </p>
           <h2 className="mt-2 max-w-2xl text-title font-semibold tracking-[-0.03em]">
-            From opportunity to release.
+            From opportunity to release
           </h2>
           <p className="mt-4 max-w-lg text-body leading-relaxed text-night-muted">
             Live HTML studies, Figma boards, and deployed prototypes. Expand any
@@ -251,7 +251,7 @@ function Home() {
 
       <section className="page-wrap-wide py-20 md:py-28">
         <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-          Practice
+          My Vibe
         </p>
         <h2 className="mt-2 text-title font-semibold tracking-[-0.03em] text-ink">
           What gets done.
@@ -283,7 +283,7 @@ function Home() {
       <section className="border-t border-ink/8 bg-surface">
         <div className="page-wrap-wide py-20 md:py-28">
           <h2 className="max-w-2xl text-title font-semibold tracking-[-0.03em] text-ink">
-            Where there is opportunity, align the work that ships.
+            I seek opportunities to align the work that ships.
           </h2>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild>
