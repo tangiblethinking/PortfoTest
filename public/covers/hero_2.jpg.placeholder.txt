@@ -1,0 +1,9 @@
+Replace this with a real hero_2.jpg image in public/covers/.
+
+The before/after slider on the home page uses:
+- before: /covers/hero.jpg  → label "what you see me do"
+- after:  /covers/hero_2.jpg → label "what i really do"
+
+Clicking the slider area still opens the design-ops embed via openWork.
+
+Delete this .txt file once you upload the real JPG.
