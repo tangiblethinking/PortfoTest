@@ -54,6 +54,9 @@ function BeforeAfterSlider({
     dragging.current = false;
   };
 
+  const showBeforeLabel = pos >= 45;
+  const showAfterLabel = pos <= 55;
+
   return (
     <div
       ref={containerRef}
@@ -62,14 +65,14 @@ function BeforeAfterSlider({
       onPointerUp={onPointerUp}
       onPointerLeave={onPointerUp}
     >
-      {/* After image (full) */}
+      {/* After image (full base) */}
       <img
         src={afterSrc}
         alt={alt}
-        className="absolute inset-0 h-full w-full object-contain"
+        className="absolute inset-0 h-full w-full object-cover"
         draggable={false}
       />
-      {/* Before image (clipped) */}
+      {/* Before image (clipped overlay) */}
       <div
         className="absolute inset-0 overflow-hidden"
         style={{ width: `${pos}%` }}
@@ -77,23 +80,26 @@ function BeforeAfterSlider({
         <img
           src={beforeSrc}
           alt={alt}
-          className="h-full max-w-none object-contain"
+          className="absolute inset-0 h-full w-full max-w-none object-cover"
           style={{
             width: containerRef.current
               ? `${containerRef.current.offsetWidth}px`
               : "100%",
-            maxWidth: "none",
           }}
           draggable={false}
         />
       </div>
-      {/* Labels */}
-      <span className="pointer-events-none absolute left-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
-        {beforeLabel}
-      </span>
-      <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
-        {afterLabel}
-      </span>
+      {/* Labels — hide minority side past 55% */}
+      {showBeforeLabel && (
+        <span className="pointer-events-none absolute left-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg transition-opacity">
+          {beforeLabel}
+        </span>
+      )}
+      {showAfterLabel && (
+        <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg transition-opacity">
+          {afterLabel}
+        </span>
+      )}
       {/* Handle */}
       <div
         className="absolute top-0 bottom-0 z-10 w-1 -translate-x-1/2 cursor-ew-resize bg-white shadow"
