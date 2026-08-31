@@ -72,20 +72,15 @@ function BeforeAfterSlider({
         className="absolute inset-0 h-full w-full object-cover"
         draggable={false}
       />
-      {/* Before image (clipped overlay) */}
+      {/* Before image — full size, clipped via clip-path (no ref measurement needed) */}
       <div
-        className="absolute inset-0 overflow-hidden"
-        style={{ width: `${pos}%` }}
+        className="absolute inset-0"
+        style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
       >
         <img
           src={beforeSrc}
           alt={alt}
-          className="absolute inset-0 h-full w-full max-w-none object-cover"
-          style={{
-            width: containerRef.current
-              ? `${containerRef.current.offsetWidth}px`
-              : "100%",
-          }}
+          className="absolute inset-0 h-full w-full object-cover"
           draggable={false}
         />
       </div>
