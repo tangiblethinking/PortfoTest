@@ -215,6 +215,7 @@ export const work: WorkItem[] = [
     ],
     kind: "methodology",
     featured: true,
+    span: "wide",
   },
   {
     slug: "org-visibility",
@@ -290,6 +291,7 @@ export const work: WorkItem[] = [
     ],
     kind: "methodology",
     featured: true,
+    span: "wide",
   },
   {
     slug: "total-rewards",
@@ -312,6 +314,7 @@ export const work: WorkItem[] = [
       { label: "User Flow Prototype", url: "/work/rewards.png", kind: "image" },
     ],
     kind: "methodology",
+    span: "wide",
   },
   {
     slug: "mine-accounting",
