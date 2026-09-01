@@ -15,19 +15,18 @@ function Interests() {
       <header className="page-wrap-wide pb-10 pt-16 md:pb-14 md:pt-24">
         <Reveal>
           <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-            Interests
+            I have...
           </p>
         </Reveal>
         <Reveal delay={80}>
           <h1 className="mt-4 max-w-3xl text-display font-semibold leading-[1.05] tracking-[-0.035em] text-ink">
-            Areas of inquiry.
+            Insatiable Curiosity
           </h1>
         </Reveal>
         <Reveal delay={140}>
           <p className="mt-5 max-w-xl text-lede leading-snug text-muted">
-            Not hobbies invented for a page. These are the questions that keep
-            showing up in the published work — AI discovery, visual ergonomics,
-            operations, industrial systems, and learning environments.
+            It's not a choice. I ask questions. It drives me to think with precision.
+            No matter what I do, I build solutions that are purposed with function through design.
           </p>
         </Reveal>
       </header>
