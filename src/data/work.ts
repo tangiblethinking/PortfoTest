@@ -135,7 +135,7 @@ export const work: WorkItem[] = [
     ],
     kind: "case-study",
     featured: true,
-    span: "full",
+    span: "wide",
   },
   {
     slug: "terms-consent",
