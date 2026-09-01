@@ -81,7 +81,7 @@ function About() {
 
       <section className="page-wrap-wide py-20 md:py-28">
         <h2 className="text-title font-semibold tracking-[-0.03em] text-ink">
-          13+ years Business Models, Targeted Markets, and Delivery plaforms.
+          13+ years with Business Models, Targeted Markets, and Delivery plaforms.
         </h2>
         <ol className="mt-12">
           {timeline.map((job) => (
