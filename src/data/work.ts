@@ -64,7 +64,7 @@ export const work: WorkItem[] = [
     gallery: ["/covers/craft.jpg", "/covers/model.jpg"],
     embeds: [
       {
-        label: "Design Ops app",
+        label: "Design Ops Alignment",
         url: "https://opdesignoprojo.vercel.app/",
         kind: "app",
       },
