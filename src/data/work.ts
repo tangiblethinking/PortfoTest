@@ -22,6 +22,7 @@ export type WorkItem = {
   embeds: Embed[];
   kind: WorkKind;
   featured?: boolean;
+  /** Controls card aspect: "wide" = 16/10, "full" (or omit) = 4/3 */
   span?: "full" | "wide";
 };
 
@@ -68,11 +69,11 @@ export const work: WorkItem[] = [
         url: "https://opdesignoprojo.vercel.app/",
         kind: "app",
       },
-      
       { label: "Case study", url: "https://www.uxapex.com/designops", kind: "html" },
     ],
     kind: "case-study",
     featured: true,
+    span: "full",
   },
   {
     slug: "persona-revenue",
@@ -96,7 +97,7 @@ export const work: WorkItem[] = [
     ],
     kind: "case-study",
     featured: true,
-    span: "wide",
+    span: "full",
   },
   {
     slug: "virtual-labs",
@@ -115,6 +116,7 @@ export const work: WorkItem[] = [
     ],
     kind: "case-study",
     featured: true,
+    span: "wide",
   },
   {
     slug: "ai-discovery",
@@ -129,11 +131,11 @@ export const work: WorkItem[] = [
     cover: "/covers/glass.jpg",
     gallery: ["/covers/glass.jpg"],
     embeds: [
-    
       { label: "Implementation Strategy", url: "https://www.uxapex.com/discovery", kind: "html" },
     ],
     kind: "case-study",
     featured: true,
+    span: "full",
   },
   {
     slug: "terms-consent",
