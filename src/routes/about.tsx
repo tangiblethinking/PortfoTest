@@ -23,8 +23,7 @@ function About() {
         </Reveal>
         <Reveal delay={140}>
           <p className="mt-6 max-w-xl text-lede leading-snug text-muted">
-            {profile.title}. Aligning design outcomes with executive goals,
-            running complex discovery, and shaping long-term product roadmaps.
+            {profile.title}
           </p>
         </Reveal>
       </header>
