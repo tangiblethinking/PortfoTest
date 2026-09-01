@@ -68,11 +68,11 @@ function WorkPage() {
       </header>
 
       <section className="page-wrap-wide grid grid-cols-1 gap-x-6 gap-y-12 pb-24 md:grid-cols-2">
-        {items.map((item, i) => (
+        {items.map((item) => (
           <MediaCard
             key={item.slug}
             item={item}
-            large={item.featured && i % 3 === 0}
+            large={item.span === "wide"}
           />
         ))}
       </section>
