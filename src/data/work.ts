@@ -191,6 +191,7 @@ export const work: WorkItem[] = [
       { label: "Behavioral UX", url: "https://www.uxapex.com/uxtrans", kind: "html" },
     ],
     kind: "case-study",
+    span: "wide",
   },
   {
     slug: "information-architecture",
