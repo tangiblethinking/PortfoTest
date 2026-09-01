@@ -46,7 +46,7 @@ export const work: WorkItem[] = [
       },
       { label: "Customer Aquisition Study", url: "https://www.uxapex.com/ecomm", kind: "html" },
     ],
-    kind: "Customer Aquisition Study",
+    kind: "case-study",
     featured: true,
     span: "wide",
   },
