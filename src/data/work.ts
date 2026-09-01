@@ -40,13 +40,13 @@ export const work: WorkItem[] = [
     gallery: ["/work/persona.png", "/covers/retail.jpg"],
     embeds: [
       {
-        label: "Live deployment",
+        label: "Deployment Protoype",
         url: "https://www.uxapex.com/cart",
         kind: "app",
       },
       { label: "Case study", url: "https://www.uxapex.com/ecomm", kind: "html" },
     ],
-    kind: "case-study",
+    kind: "Customer Aquisition Study",
     featured: true,
     span: "wide",
   },
@@ -119,7 +119,7 @@ export const work: WorkItem[] = [
   {
     slug: "ai-discovery",
     index: "04",
-    title: "Rise of AI Suggestions",
+    title: "Modernizing Brand Discovery",
     subtitle: "How discovery is evolving",
     company: "Industry",
     year: "2026",
@@ -129,12 +129,8 @@ export const work: WorkItem[] = [
     cover: "/covers/glass.jpg",
     gallery: ["/covers/glass.jpg"],
     embeds: [
-      {
-        label: "Live deployment",
-        url: "https://teststudynew.vercel.app/",
-        kind: "app",
-      },
-      { label: "Essay", url: "https://www.uxapex.com/discovery", kind: "html" },
+    
+      { label: "Implementation Strategy", url: "https://www.uxapex.com/discovery", kind: "html" },
     ],
     kind: "case-study",
     featured: true,
@@ -282,7 +278,7 @@ export const work: WorkItem[] = [
     cover: "/work/oma-page.png",
     gallery: ["/work/oma-page.png", "/work/oma-ui.png"],
     embeds: [
-      { label: "Case study", url: "https://www.uxapex.com/oma", kind: "html" },
+      { label: "UX Design Strategy", url: "https://www.uxapex.com/oma", kind: "html" },
       {
         label: "Updated UI",
         url: "/work/oma-ui.png",
