@@ -9,7 +9,7 @@ export const profile = {
   phoneHref: "tel:+14802062145",
   linkedin: "https://www.linkedin.com/in/kenreigh/",
   site: "https://uxapex.com/",
-  lede: "I partner with founders, product leaders, and engineering teams to turn ambiguous problems into clear product direction — and then into shipped experiences that move the metrics that matter.",
+  lede: "I partner up all other the organization. Be it with founders, product leaders, or engineering teams I make my output clear and oriented in business goals — and then align feasible tasks.",
   summary:
     "Design executive with 11+ years leading end-to-end digital product experiences across e-commerce, enterprise, and industrial environments. Builds and directs design organizations that translate complex strategy into measurable business outcomes — retention, conversion, and revenue.",
   education: {
