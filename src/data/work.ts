@@ -44,7 +44,7 @@ export const work: WorkItem[] = [
         url: "https://www.uxapex.com/cart",
         kind: "app",
       },
-      { label: "Case study", url: "https://www.uxapex.com/ecomm", kind: "html" },
+      { label: "Customer Aquisition Study", url: "https://www.uxapex.com/ecomm", kind: "html" },
     ],
     kind: "Customer Aquisition Study",
     featured: true,
@@ -64,7 +64,7 @@ export const work: WorkItem[] = [
     gallery: ["/covers/craft.jpg", "/covers/model.jpg"],
     embeds: [
       {
-        label: "Design Ops Alignment",
+        label: "case-study",
         url: "https://opdesignoprojo.vercel.app/",
         kind: "app",
       },
