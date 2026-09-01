@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const links = [
   { to: "/work", label: "Work" },
   { to: "/about", label: "About" },
-  { to: "/interests", label: "Interests" },
+  { to: "/interests", label: "Talents" },
 ] as const;
 
 export function Nav() {
