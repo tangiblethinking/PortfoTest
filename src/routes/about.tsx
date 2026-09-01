@@ -42,7 +42,7 @@ function About() {
 
       <section className="page-wrap-wide grid gap-10 pb-20 md:grid-cols-[0.8fr_1.2fr] md:pb-28">
         <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-          Profile
+          Craft and Candor
         </p>
         <div>
           <p className="text-body leading-relaxed text-ink">{profile.lede}</p>
@@ -58,7 +58,7 @@ function About() {
       <section className="border-y border-ink/8 bg-surface">
         <div className="page-wrap-wide py-20 md:py-28">
           <p className="text-caption font-medium uppercase tracking-[0.16em] text-subtle">
-            Philosophy
+            Diligence and Execution
           </p>
           <h2 className="mt-2 max-w-xl text-title font-semibold tracking-[-0.03em] text-ink">
             Visual ergonomics. Function is a requirement of aesthetics.
