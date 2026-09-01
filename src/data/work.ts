@@ -68,11 +68,7 @@ export const work: WorkItem[] = [
         url: "https://opdesignoprojo.vercel.app/",
         kind: "app",
       },
-      {
-        label: "Live deployment",
-        url: "https://design-ops-case-study.vercel.app/",
-        kind: "app",
-      },
+      
       { label: "Case study", url: "https://www.uxapex.com/designops", kind: "html" },
     ],
     kind: "case-study",
