@@ -61,7 +61,7 @@ function About() {
             Diligence and Execution
           </p>
           <h2 className="mt-2 max-w-xl text-title font-semibold tracking-[-0.03em] text-ink">
-            Visual ergonomics. Function is a requirement of aesthetics.
+           A fundamental mindset for directness
           </h2>
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl bg-ink/8 md:grid-cols-2">
             {philosophy.map((item) => (
@@ -81,7 +81,7 @@ function About() {
 
       <section className="page-wrap-wide py-20 md:py-28">
         <h2 className="text-title font-semibold tracking-[-0.03em] text-ink">
-          11+ years across e-commerce, enterprise, and industrial.
+          13+ years across e-commerce, enterprise, and industrial.
         </h2>
         <ol className="mt-12">
           {timeline.map((job) => (
