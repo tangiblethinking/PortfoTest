@@ -217,11 +217,11 @@ function Home() {
           </Link>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {heroWork.map((item, i) => (
+          {heroWork.map((item) => (
             <MediaCard
               key={item.slug}
               item={item}
-              large={item.span === "wide" || i === 0}
+              large={item.span === "wide"}
             />
           ))}
         </div>
