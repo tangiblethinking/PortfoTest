@@ -88,11 +88,6 @@ export const work: WorkItem[] = [
     gallery: ["/work/persona.png"],
     embeds: [
       {
-        label: "Live deployment",
-        url: "https://persongratadata.vercel.app/",
-        kind: "app",
-      },
-      {
         label: "Persona generator",
         url: "https://persona-gen-prospectives.figma.site/",
         kind: "prototype",
@@ -195,12 +190,7 @@ export const work: WorkItem[] = [
     cover: "/covers/desert.jpg",
     gallery: ["/covers/desert.jpg"],
     embeds: [
-      {
-        label: "Live deployment",
-        url: "https://company-ux-transform.vercel.app/",
-        kind: "app",
-      },
-      { label: "Case study", url: "https://www.uxapex.com/uxtrans", kind: "html" },
+      { label: "Behavioral UX", url: "https://www.uxapex.com/uxtrans", kind: "html" },
     ],
     kind: "case-study",
   },
@@ -217,9 +207,9 @@ export const work: WorkItem[] = [
     cover: "/work/ia-page.png",
     gallery: ["/work/ia.png", "/work/ia-page.png"],
     embeds: [
-      { label: "Presentation", url: "https://www.uxapex.com/ia", kind: "html" },
+      { label: "Information Architecture Strategy", url: "https://www.uxapex.com/ia", kind: "html" },
       {
-        label: "FigJam methodology",
+        label: "IA Breakdown",
         url: "https://www.figma.com/board/xGM5BU3EYuIdFffxKi7VUz/IA-for-Ambassador-Incetives?node-id=1-56",
         kind: "figma",
       },
@@ -241,12 +231,12 @@ export const work: WorkItem[] = [
     gallery: ["/work/org.png"],
     embeds: [
       {
-        label: "Live prototype",
+        label: "Template prototype",
         url: "https://ux-r-and-d-and-a.figma.site/",
         kind: "prototype",
       },
       {
-        label: "Network map",
+        label: "Research Exemplar",
         url: "https://tinyurl.com/customerAnalysisNetwork",
         kind: "app",
       },
@@ -272,7 +262,7 @@ export const work: WorkItem[] = [
         kind: "prototype",
       },
       {
-        label: "VIP prototype",
+        label: "Generated Persona",
         url: "https://tinyurl.com/ProspectivesVIP022026sarah02",
         kind: "prototype",
       },
@@ -294,7 +284,7 @@ export const work: WorkItem[] = [
     embeds: [
       { label: "Case study", url: "https://www.uxapex.com/oma", kind: "html" },
       {
-        label: "Original UI",
+        label: "Updated UI",
         url: "/work/oma-ui.png",
         kind: "image",
       },
@@ -316,11 +306,11 @@ export const work: WorkItem[] = [
     gallery: ["/work/rewards.png"],
     embeds: [
       {
-        label: "FigJam methodology",
+        label: "Information Architecture - UI",
         url: "https://www.figma.com/board/aJJIGQFHG8pfJylWCVZZA7/Freeport-HR-Total-Rewards?node-id=0-1",
         kind: "figma",
       },
-      { label: "Interface", url: "/work/rewards.png", kind: "image" },
+      { label: "User Flow Prototype", url: "/work/rewards.png", kind: "image" },
     ],
     kind: "methodology",
   },
@@ -338,12 +328,12 @@ export const work: WorkItem[] = [
     gallery: ["/work/mine.png", "/covers/minerals.jpg"],
     embeds: [
       {
-        label: "FigJam methodology",
+        label: "User Journey Flow",
         url: "https://www.figma.com/board/LIPgSASEQNHDUXcZHBwrMz/Freeport-McMoRan-Resource-Mine-Accouting?node-id=0-1",
         kind: "figma",
       },
       {
-        label: "Wireframe prototype",
+        label: "User FLow Prototype",
         url: "https://www.figma.com/proto/qij6caj079zBLrmbKkzwE0/WIP-Wireframe-Concepts?node-id=3632-48153&scaling=scale-down-width&page-id=1228%3A12478&starting-point-node-id=3632%3A48153&hide-ui=1",
         kind: "prototype",
       },
