@@ -11,7 +11,7 @@ export const profile = {
   site: "https://uxapex.com/",
   lede: "I partner up all other the organization. Be it with founders, product leaders, or engineering teams I make my output clear and oriented in business goals — and then align feasible tasks.",
   summary:
-    "Design executive with 11+ years leading end-to-end digital product experiences across e-commerce, enterprise, and industrial environments. Builds and directs design organizations that translate complex strategy into measurable business outcomes — retention, conversion, and revenue.",
+    "13+ years turning complex business to design to development workflows into clean, production-ready software. Naturally, I bridge the gap between craft and technical expertise. I focus on building scalable collaboration that will while ensure every choice grounded in real-world constraints and business impact.",
   education: {
     degree: "Bachelor of Arts",
     school: "The Art Institute of Phoenix",
