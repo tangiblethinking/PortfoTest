@@ -38,6 +38,10 @@ function About() {
             />
           </div>
         </div>
+        <p className="mt-3 px-1 text-caption text-subtle">
+          {profile.location} · Based on a true story · Click/Tap to see more{" "}
+          {profile.availability}
+        </p>
       </section>
 
       <section className="page-wrap-wide grid gap-10 pb-20 md:grid-cols-[0.8fr_1.2fr] md:pb-28">
