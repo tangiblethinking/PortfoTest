@@ -29,7 +29,7 @@ function About() {
       </header>
 
       <section className="page-wrap-wide pb-16">
-        <div className="relative overflow-hidden rounded-2xl bg-fill">
+        <div className="overflow-hidden rounded-2xl bg-fill">
           <div className="aspect-[16/9] md:aspect-[21/9]">
             <img
               src="/covers/desert.jpg"
@@ -37,12 +37,6 @@ function About() {
               className="img-cover"
             />
           </div>
-          <span className="pointer-events-none absolute left-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
-            where I work from
-          </span>
-          <span className="pointer-events-none absolute right-3 top-3 rounded-md bg-ink/70 px-2 py-1 text-caption font-medium text-night-fg">
-            where the work lands
-          </span>
         </div>
         <p className="mt-3 px-1 text-caption text-subtle">
           {profile.location} · Based on a true story · Click/Tap to see more{" "}
