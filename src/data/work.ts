@@ -85,7 +85,7 @@ export const work: WorkItem[] = [
     outcome:
       "Enabled the organization to operate as a coordinated, insight-driven engine to optimize brand discovery, member expansion, and subscription volumes.",
     tags: ["Systems Governance", "Cross-Functional Strategy", "Personas"],
-    cover: "/work/persona.png",
+    cover: "/covers/discovery.jpg",
     gallery: ["/work/persona.png"],
     embeds: [
       {
