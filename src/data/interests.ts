@@ -43,7 +43,7 @@ export const interests: Interest[] = [
   {
     slug: "industrial-systems",
     title: "Structural Sensibility",
-    lede: "Thnking in Systems and the Big Picure",
+    lede: "Thnking in Systems and the Big Picture",
     body: "A bridge is needed between procedural order, a willingness to bend rules strategically, and building something feasible. Systematic models are a steering mechanism to navigate ambiguity and engineer predictable results to then cross that bridge with confidence.",
     cover: "/covers/minerals.jpg",
     relatedSlugs: ["mine-accounting", "total-rewards", "order-management"],
