@@ -46,7 +46,7 @@ export const philosophy = [
   {
     n: "04",
     title: "Listen, Think, Respond",
-    body: "Getting the heart of why failure happens is easy. Acknowleding it is more difficult. And owning it will allow the innovations to begin.",
+    body: "Getting to the heart of why failure happens is easy. Acknowleding it is more difficult. And owning it will allow the innovations to begin.",
   },
 ];
 
