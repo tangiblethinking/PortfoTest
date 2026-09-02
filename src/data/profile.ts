@@ -30,23 +30,23 @@ export const metrics = [
 export const philosophy = [
   {
     n: "01",
-    title: "Design is a business function.",
-    body: "Every design decision must be defensible in business terms. Work is measured in retention, conversion, and revenue — not pixels or deliverables.",
+    title: "Set Plans and Goals",
+    body: "Every design decision must be defensible in business terms. Work is measured in relation to goals — not pixels or deliverables.",
   },
   {
     n: "02",
-    title: "Systems before screens.",
-    body: "The most leveraged thing a design leader can build is the infrastructure that makes great design repeatable. Systems, critique, and research compound. Screens do not.",
+    title: "Systems-Level Contributions",
+    body: "Design can be leveraged in all departments. Then, this infrastructure aligns communications and collaboration needs. Systems, critique, research, output compound.",
   },
   {
     n: "03",
-    title: "Lead by teaching.",
-    body: "Feedback should build judgment, not just correct work. The goal is designers who graduate from needing approval to making the call themselves.",
+    title: "Lead by teaching",
+    body: "Feedback and guideance, not just correcting faulty work. The goal is to support sovereignty that helps make better descisions and smarter insight.",
   },
   {
     n: "04",
-    title: "Ambiguity is the job.",
-    body: "Director-level work is converting strategic fog into a direction a team can execute. Requirements will be incomplete. The answer is structure, not certainty.",
+    title: "Listen, Think, Respond",
+    body: "Getting the heart of why failure happens is easy. Acknowleding it is more difficult. And owning it will allow the innovations to begin.",
   },
 ];
 
