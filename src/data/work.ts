@@ -85,7 +85,7 @@ export const work: WorkItem[] = [
     outcome:
       "Enabled the organization to operate as a coordinated, insight-driven engine to optimize brand discovery, member expansion, and subscription volumes.",
     tags: ["Systems Governance", "Cross-Functional Strategy", "Personas"],
-    cover: "/covers/discovery.jpg",
+    cover: "/work/persona.png",
     gallery: ["/work/persona.png"],
     embeds: [
       {
@@ -128,7 +128,7 @@ export const work: WorkItem[] = [
     outcome:
       "Products and digital experiences are being left out of discovery as people search through LLMs. Those who adapt will hold a longer competitive gain than those who delay.",
     tags: ["AI Strategy", "Discovery", "LLM"],
-    cover: "/covers/glass.jpg",
+    cover: "/covers/discovery.jpg",
     gallery: ["/covers/glass.jpg"],
     embeds: [
       { label: "Implementation Strategy", url: "https://www.uxapex.com/discovery", kind: "html" },
