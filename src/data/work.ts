@@ -185,7 +185,7 @@ export const work: WorkItem[] = [
     outcome:
       "Elevated design from a service function to a strategic driver — securing C-suite buy-in and delivering measurable outcomes across e-commerce, mining, and self-storage.",
     tags: ["UX Strategy", "Executive Influence", "Workshops"],
-    cover: "/covers/desert.jpg",
+    cover: "/covers/Study.jpg",
     gallery: ["/covers/desert.jpg"],
     embeds: [
       { label: "Behavioral UX", url: "https://www.uxapex.com/uxtrans", kind: "html" },
